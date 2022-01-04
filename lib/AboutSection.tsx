@@ -10,7 +10,7 @@ interface AboutProps {
 
 const AboutSection = ({ titulo, texto, imagen }: AboutProps) => {
   return (
-    <div className="flex flex-col max-w-sm items-center justify-center text-center">
+    <div className="flex flex-col max-w-sm items-center justify-between text-center m-5">
       <div className="">
         <Image
           height={"150px"}

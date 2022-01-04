@@ -9,10 +9,11 @@ const Navbar = () => {
             <Navlogo linkDestination="#" linkText="LATAM Argentina Virtual" />
         </div>
       <div className="nav-link flex-col flex items-center ml-auto md:flex-row">
-        <Navlink destination="#" text="Inicio" />
-        <Navlink destination="#" text="Staff" />
-        <Navlink destination="#" text="Pilotos" />
-        <Navlink destination="#" text="Registrarse" />
+        <Navlink destination="/" text="Inicio" />
+        <Navlink destination="/staff" text="Staff" />
+        <Navlink destination="/pilotos" text="Pilotos" />
+        <Navlink destination="/register" text="Registrarse" />
+        <Navlink destination="/login" text="Acceder" />
       </div>
     </div>
   );
