@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import placeholder from "../public/images/acars.png";
 
+
 interface AboutProps {
   titulo: string;
   texto: string;

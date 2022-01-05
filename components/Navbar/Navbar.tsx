@@ -11,9 +11,7 @@ const Navbar = () => {
       <div className="nav-link flex-col flex items-center ml-auto md:flex-row">
         <Navlink destination="/" text="Inicio" />
         <Navlink destination="/staff" text="Staff" />
-        <Navlink destination="/pilotos" text="Pilotos" />
-        <Navlink destination="/register" text="Registrarse" />
-        <Navlink destination="/login" text="Acceder" />
+        <Navlink destination="mailto:contacto@latamva.com.ar" text="Contactar" />
       </div>
     </div>
   );
