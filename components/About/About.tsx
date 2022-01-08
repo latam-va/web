@@ -2,7 +2,7 @@ import React from "react";
 import AboutSection from "../../lib/AboutSection";
 import acars from "../../public/images/acars.png";
 import discord from "../../public/images/discord.png";
-import rutas from "../../public/images/rutas.jpg";
+import rutas from "../../public/images/rutas.jpeg";
 import libreria from '../../public/images/libreria.jpg'
 
 const Offers = () => {
@@ -10,7 +10,7 @@ const Offers = () => {
     <div className="flex flex-col h-screen bg-zinc-100  w-full items-center justify-center">
       <div className="flex">
         <h1 className="font-montseratCustom font-bold text-6xl">
-          Que ofrecemos?
+          ¿Que ofrecemos?
         </h1>
       </div>
       <div className="flex flex-row justify-around items-start mt-[4rem]">
