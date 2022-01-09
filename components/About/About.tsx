@@ -7,13 +7,13 @@ import libreria from '../../public/images/libreria.jpg'
 
 const Offers = () => {
   return (
-    <div className="flex flex-col h-screen bg-zinc-100  w-full items-center justify-center">
+    <div className="flex flex-col h-full bg-zinc-100 w-full items-center justify-center">
       <div className="flex">
-        <h1 className="font-montseratCustom font-bold text-6xl">
+        <h1 className="font-montseratCustom font-bold mt-10 text-2xl sm:text-5xl">
           ¿Que ofrecemos?
         </h1>
       </div>
-      <div className="flex flex-row justify-around items-start mt-[4rem]">
+      <div className="flex flex-col justify-around items-start mt-[1rem] sm:flex-row">
         <AboutSection
           imagen={discord}
           titulo="Discord"

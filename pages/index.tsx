@@ -10,13 +10,13 @@ import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
   return (
-    <>
+    <div className='overflow-hidden'>
     <Navbar />
     <Herocomponent />
     <About />
     <Inscripcion />
     <Footer />
-    </>
+    </div>
   )
 }
 

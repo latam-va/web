@@ -8,9 +8,9 @@ import piloto from '../../public/images/piloto.webp'
 
 const Inscripcion = () => {
   return (
-    <div className="flex flex-col h-screen bg-zinc-200  w-full items-center justify-center">
-      <div className="flex">
-        <h1 className="font-montseratCustom font-bold text-6xl">
+    <div className="flex flex-col h-full bg-zinc-200  w-full items-center justify-center">
+      <div className="flex mt-10">
+        <h1 className="font-montseratCustom font-bold text-2xl sm:text-5xl">
           Inscripciones
         </h1>
       </div>

@@ -12,7 +12,7 @@ interface StaffProps {
 
 const StaffCard = ({ image, name, job, mail }: StaffProps) => {
   return (
-    <div className="w-[340px] p-2 bg-white rounded-xl shadow-2xl m-10">
+    <div className="w-[px] p-2 bg-white rounded-xl shadow-2xl m-5">
       <Image
         className="h-40 object-cover rounded-xl"
         src={image}
