@@ -11,14 +11,14 @@ const Inscripcion = () => {
     <div className="flex flex-col h-full bg-zinc-200  w-full items-center justify-center">
       <div className="flex mt-10">
         <h1 className="font-montseratCustom font-bold text-2xl sm:text-5xl">
-          Inscripciones
+          Registration
         </h1>
       </div>
       <div className="flex flex-row justify-around items-start mt-[4rem]">
         <AboutSection
           imagen={piloto}
           titulo="Nuevos Pilotos"
-          texto="De momento las inscripciones para la aerolinea estan cerradas, pero ya estamos trabajando para organizar y reabrir las inscripciones."
+          texto="For the time beign registrations are closed as we are developing our new flight report system."
         />
       </div>
     </div>
