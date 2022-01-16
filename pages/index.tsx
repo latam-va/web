@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://latamva.com.ar" />
         <meta property="og:title" content="LATAM Argentina Virtual" />
-        <meta property="og:image" content="https://latamva.com.ar/images/noIsoLogo.jpg" />
+        <meta property="og:image" content="https://www.latamva.com.ar/images/noIsoLogo.jpg" />
         <meta property="og:description" content="LATAM Argentina Virtual es una aerolinea virtual registrada en IVAO la cual simula las operaciones de LATAM Argentina." />
         <meta property="theme-color" content="#5899EE" />
       </Head>
