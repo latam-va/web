@@ -35,7 +35,7 @@ const Offers = () => {
           <AboutSection
             imagen={rutas}
             titulo="Rutas Reales"
-            texto="Incorporamos todas las rutas que opera LATAM Argentina Virtual. Esto quiere decir que nuestros pilotos podran simular al maximo las operaciones de LATAM Argentina"
+            texto="Incorporamos todas las rutas que opera LATAM Argentina. Esto quiere decir que nuestros pilotos podran simular al maximo las operaciones de LATAM Argentina"
             alt="rutas reales"
           />
           <AboutSection
