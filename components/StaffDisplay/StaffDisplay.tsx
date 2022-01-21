@@ -17,18 +17,24 @@ const StaffDisplay = () => {
             job="CEO"
             image={ceo}
             mail="ceo@latamva.com.ar"
+            alt="staff"
+            enAlt="staff"
           />
           <StaffCard
             name="Francisco"
             job="WEB, RRPP"
             image={web}
             mail="web@latamva.com.ar"
+            alt="staff"
+            enAlt="staff"
           />
           <StaffCard
             name="Francisco"
             job="Tours y Eventos"
             image={test}
             mail="rrpp@latamva.com.ar"
+            alt="staff"
+            enAlt="staff"
           />
         </>
       )}
@@ -39,18 +45,24 @@ const StaffDisplay = () => {
             job="CEO"
             image={ceo}
             mail="ceo@latamva.com.ar"
+            alt="staff"
+            enAlt="staff"
           />
           <StaffCard
             name="Francisco"
             job="WEB, RRPP"
             image={web}
             mail="web@latamva.com.ar"
+            alt="staff"
+            enAlt="staff"
           />
           <StaffCard
             name="Francisco"
             job="Tours and Events"
             image={test}
             mail="rrpp@latamva.com.ar"
+            alt="staff"
+            enAlt="staff"
           />
         </>
       )}

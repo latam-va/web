@@ -4,9 +4,7 @@ import Navlogo from "../../lib/Navlogo";
 import { useRouter } from "next/router";
 
 const Navbar = () => {
-  const { locale, locales, asPath } = useRouter();
-  console.log(locales)
-  console.log(locale)
+  const { locale } = useRouter();
 
   return (
     <div className="flex shadow-xl basis-full w-full h-auto p-0 bg-gradient-to-r from-main to-secondary items-center justify-center overflow-hidden flex-row sm:justify-between">

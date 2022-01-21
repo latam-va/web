@@ -9,9 +9,11 @@ interface StaffProps {
   name: string;
   job: string;
   mail: string;
+  alt: string;
+  enAlt: string;
 }
 
-const StaffCard = ({ image, name, job, mail }: StaffProps) => {
+const StaffCard = ({ image, name, job, mail, alt, enAlt }: StaffProps) => {
   const { locale } = useRouter();
   return (
     <div className="w-[px] p-2 bg-white rounded-xl shadow-2xl m-5">
@@ -22,7 +24,7 @@ const StaffCard = ({ image, name, job, mail }: StaffProps) => {
             src={image}
             height={"160px"}
             width={"340px"}
-            alt="test"
+            alt={alt}
           />
           <div className="p-2 text-center">
             <h2 className="font-bold text-lg mb-4">{name}</h2>
@@ -42,7 +44,7 @@ const StaffCard = ({ image, name, job, mail }: StaffProps) => {
             src={image}
             height={"160px"}
             width={"340px"}
-            alt="test"
+            alt={enAlt}
           />
           <div className="p-2 text-center">
             <h2 className="font-bold text-lg mb-4">{name}</h2>

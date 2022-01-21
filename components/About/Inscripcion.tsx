@@ -23,6 +23,7 @@ const Inscripcion = () => {
             imagen={piloto}
             titulo="Nuevos Pilotos"
             texto="De momento las inscripciones para la aerolinea estan cerradas, pero ya estamos trabajando para organizar y reabrir las inscripciones."
+            alt="piloto virtual"
           />
         )}
         {locale === "en-UK" && (
@@ -30,6 +31,7 @@ const Inscripcion = () => {
           imagen={piloto}
           titulo="Registrations"
           texto="For the time being registrations are closed as we are working on our new report system for our pilots."
+          alt="virtual pilot"
         />
         )}
       </div>

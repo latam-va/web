@@ -30,35 +30,41 @@ const Offers = () => {
             imagen={discord}
             titulo="Discord"
             texto="Nuestros pilotos tienen acceso a un servidor de discord en el cual pueden reunirse con otros pilotos o recibir ayuda con lo que necesiten."
+            alt="discord"
           />
           <AboutSection
             imagen={rutas}
             titulo="Rutas Reales"
             texto="Incorporamos todas las rutas que opera LATAM Argentina Virtual. Esto quiere decir que nuestros pilotos podran simular al maximo las operaciones de LATAM Argentina"
+            alt="rutas reales"
           />
           <AboutSection
             imagen={libreria}
             titulo="Librerias"
             texto="En LATAM Argentina Virtual ofrecemos librerias completamente creadas desde 0 por nosotros las cuales tienen un nivel de detalle alto. Estas mismas, son compatibles con la mayoria de aviones del mercado, Aerosoft, FSLabs, Toliss, Flight Factor, etc..."
+            alt="Pinturas"
           />
         </div>
       )}
-       {locale === "en-UK" && (
+      {locale === "en-UK" && (
         <div className="flex flex-col justify-around items-start mt-[1rem] sm:flex-row">
           <AboutSection
             imagen={discord}
             titulo="Discord"
             texto="Our pilots have access to a Discord server in which they can talk to other pilots or request support."
+            alt="discord"
           />
           <AboutSection
             imagen={rutas}
             titulo="Real Routes"
             texto="We have implemented real LATAM Argentina routes in our system which means that our pilots can have a super realistic experience."
+            alt="real routes"
           />
           <AboutSection
             imagen={libreria}
             titulo="Liveries"
             texto="We offer 100% custom made liveries with high detail. This liveries are compatible with most addons in the market like the Aerosoft, FSLabs, Toliss, Flight Factor, etc..."
+            alt="Paintings"
           />
         </div>
       )}
