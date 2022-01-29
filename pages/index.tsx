@@ -7,8 +7,12 @@ import Footer from "../components/Footer/Footer";
 import Herocomponent from "../components/Hero/Herocomponent";
 import Navbar from "../components/Navbar/Navbar";
 import styles from "../styles/Home.module.css";
+import CookieConesnt from "react-cookie-consent";
+import { useRouter } from "next/router";
 
 const Home: NextPage = () => {
+  const { locale } = useRouter();
+
   return (
     <>
       <Head>
@@ -33,8 +37,14 @@ const Home: NextPage = () => {
         />
 
         <meta name="twitter:title" content="LATAM Argentina Virtual" />
-        <meta name="twitter:description" content="LATAM Argentina Virtual es una aerolinea virtual registrada en IVAO la cual simula las operaciones de LATAM Argentina." />
-        <meta name="twitter:image" content="https://www.latamva.com.ar/images/noIsoLogo.jpg" />
+        <meta
+          name="twitter:description"
+          content="LATAM Argentina Virtual es una aerolinea virtual registrada en IVAO la cual simula las operaciones de LATAM Argentina."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.latamva.com.ar/images/noIsoLogo.jpg"
+        />
         <meta name="twitter:site" content="@LatamArgVirtual" />
         <meta name="twitter:creator" content="@LatamArgVirtual" />
 
@@ -45,6 +55,24 @@ const Home: NextPage = () => {
         <Herocomponent />
         <About />
         <Inscripcion />
+        {locale === "es-AR" && (
+          <CookieConesnt
+          location="bottom"
+          buttonText='Aceptar'
+          expires={150}
+          style={{ background: "#5899EE"}}
+          buttonStyle={{ color: "#7267CB"}}
+          >Este sitio web usa cookies para mejorar la experiencia del usuario.</CookieConesnt>
+        )}
+        {locale === "en-UK" && (
+          <CookieConesnt
+          location="bottom"
+          buttonText='Accept'
+          expires={150}
+          style={{ background: "#5899EE"}}
+          buttonStyle={{ color: "#7267CB"}}
+          >This website uses cookies to enhance user experience.</CookieConesnt>
+        )}
         <Footer />
       </div>
     </>
