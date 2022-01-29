@@ -5,12 +5,15 @@ import ar from "../../public/images/ar.png";
 import FooterCol from "../../lib/FooterCol";
 
 import { SocialIcon } from "react-social-icons";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <div className="flex flex-col w-full h-full bg-gradient-to-r from-main to-secondary justify-between items-center sm:flex-row">
-      <div className="flex flex-col m-10">
-        <Image src={ar} alt="partner" width={"280"} height={"112"} />
+      <div className="flex flex-col m-10 hover:cursor-pointer">
+        <Link href={"https://ar.ivao.aero"} passHref>
+          <Image src={ar} alt="partner" width={"280"} height={"112"} />
+        </Link>
       </div>
 
       <div className="flex flex-col m-10">
@@ -32,8 +35,10 @@ const Footer = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col m-10">
-        <Image src={partner} alt="partner" width={"270"} height={"100"} />
+      <div className="flex flex-col m-10 ">
+        <Link href={"https://ivao.aero"} passHref>
+          <Image src={partner} alt="partner" width={"270"} height={"100"} />
+        </Link>
       </div>
     </div>
   );
