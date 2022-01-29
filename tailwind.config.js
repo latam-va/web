@@ -12,12 +12,13 @@ module.exports = {
       },
       backgroundImage: {
         test: "url('/images/test.jpg')",
+        register: "url('/images/noIsoLogo.jpg')",
       },
       fontFamily: {
-        montseratCustom: ['Montserrat', 'sans-serif'],
-        testimonial: ['Licorice', 'cursive']
-      }
+        montseratCustom: ["Montserrat", "sans-serif"],
+        testimonial: ["Licorice", "cursive"],
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
