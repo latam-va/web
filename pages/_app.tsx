@@ -11,11 +11,9 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"
         />
-        <link rel="icon" href='/images/logo512.png' />
+        <link rel="icon" href="/images/logo512.png" />
       </Head>
-      <SessionProvider session={session}>
-        <Component {...pageProps} />
-      </SessionProvider>
+      <Component {...pageProps} />
     </>
   );
 }

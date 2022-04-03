@@ -4,3 +4,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    ::-webkit-scrollbar {
+        @apply w-3
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-slate-200
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-slate-400 rounded-full transition-all ease-out duration-300
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-slate-500 rounded-full transition-all ease-out duration-300
+    }
+}

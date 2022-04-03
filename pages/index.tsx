@@ -9,11 +9,24 @@ import Navbar from "../components/Navbar/Navbar";
 import styles from "../styles/Home.module.css";
 import CookieConesnt from "react-cookie-consent";
 import { useRouter } from "next/router";
+import { getCookie, setCookies } from "cookies-next";
+
+import logo from '../public/images/logo512.png';
 
 const Home: NextPage = () => {
   const { locale } = useRouter();
 
   return (
+    <div className="flex w-full h-screen items-center justify-center flex-col">
+      <h1 className="text-4xl">Pagina web en mantenimiento</h1>
+      <br />
+      <p className="text-xl">Estamos trabajando para actualizar la pagina web para cumplir con los estandares requeridos por IVAO.</p>
+      <br />
+      <Image src={logo} alt='logo' height={50} width={50} />
+    </div>
+  )
+
+  /* return (
     <>
       <Head>
         <title>LATAM Argentina Virtual</title>
@@ -76,7 +89,23 @@ const Home: NextPage = () => {
         <Footer />
       </div>
     </>
-  );
+  ); */
 };
+
+
+/* export async function getServerSideProps(context: any) {
+  let langCookie = getCookie("language");
+
+  if (!langCookie) {
+    await setCookies("language", "es");
+    langCookie = getCookie("language");
+  }
+
+  return {
+    props: {
+      language: 'es',
+    },
+  };
+} */
 
 export default Home;
